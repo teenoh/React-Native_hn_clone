@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity } from "react-native";
 import Button from '../components/Button'
+import Header from '../components/Header'
 
 export default class Welcome extends Component {
   render() {
