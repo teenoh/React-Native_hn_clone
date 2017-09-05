@@ -34,7 +34,7 @@ const styles = {
   },
 
   headerTextView: {
-    flex: 4,
+    flex: 3,
     justifyContent: "center",
     alignItems: "center",
   },
