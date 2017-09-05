@@ -7,7 +7,7 @@ export default class Welcome extends Component {
       <View style={styles.containerStyle}>
         <View style={styles.headerTextView}>
           <Text style={styles.headerTextStyle}>Hacker News</Text>
-          <Text>Get up to date news on tech stuff</Text>
+          <Text style={styles.smallHeaderTextStyle}>Get up to date news on tech stuff</Text>
         </View>
 
         <View style={styles.buttonView}>
@@ -19,8 +19,8 @@ export default class Welcome extends Component {
           </TouchableOpacity>
         </View>
 
-        <View style={{ flex: 0.5 }}>
-          <Text> Hacker News clone</Text>
+        <View style={styles.bottomTextView}>
+          <Text style={styles.bottomTextStyle}> Hacker News clone</Text>
         </View>
       </View>
     );
@@ -37,12 +37,16 @@ const styles = {
     flex: 4,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "blue"
   },
 
   headerTextStyle: {
-    fontSize: 30,
+    fontSize: 40,
     color: "white"
+  },
+
+  smallHeaderTextStyle: {
+      fontSize:20,
+      color:"white"
   },
 
   buttonView: {
@@ -55,20 +59,27 @@ const styles = {
     alignSelf: "stretch",
     backgroundColor: "#fff",
     borderRadius: 5,
-    borderWidth: 1,
-    borderColor: "#007aff",
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
+    justifyContent: "center",
+    alignItems: "center"
   },
 
   buttonTextStyle: {
     alignSelf: 'center',
-    color: "#007aff",
+    color: "black",
     fontSize: 16,
-    fontWeight: "600",
-    paddingTop: 10,
-    paddingBottom: 10
 },
 
-  bottomTextStyle: {}
+  bottomTextView:  {
+    flex: 0.5,
+    justifyContent: "flex-end",
+    alignItems: "center",
+    marginBottom: 8
+  },
+
+  bottomTextStyle: {
+    color: "white",  
+
+  }
 };
