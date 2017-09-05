@@ -7,6 +7,9 @@ export default class Welcome extends Component {
   render() {
     return (
       <View style={styles.containerStyle}>
+
+        <Header title="Hacker News App"/>
+
         <View style={styles.headerTextView}>
           <Text style={styles.headerTextStyle}>Hacker News</Text>
           <Text style={styles.smallHeaderTextStyle}>Get up to date news on tech stuff</Text>
