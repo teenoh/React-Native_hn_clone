@@ -20,3 +20,10 @@ class Welcome extends Component {
     </View>;
   }
 }
+
+const styles = {
+    containerStyle:{},
+    headerTextStyle:{},
+    buttonStyle: {},
+    bottomTextStyle:{}
+}
