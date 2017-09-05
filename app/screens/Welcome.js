@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity, Button } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
+import Button from '../components/Button'
 
 export default class Welcome extends Component {
   render() {
@@ -11,12 +12,8 @@ export default class Welcome extends Component {
         </View>
 
         <View style={styles.buttonView}>
-          <TouchableOpacity style={styles.buttonStyle}>
-            <Text style={styles.buttonTextStyle}>Login</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.buttonStyle}>
-            <Text style={styles.buttonTextStyle}> Register </Text>
-          </TouchableOpacity>
+          <Button>Login</Button>
+          <Button>Register</Button>
         </View>
 
         <View style={styles.bottomTextView}>
@@ -53,23 +50,6 @@ const styles = {
     flex: 0.3,
     flexDirection: "row"
   },
-
-  buttonStyle: {
-    flex: 1,
-    alignSelf: "stretch",
-    backgroundColor: "#fff",
-    borderRadius: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-
-  buttonTextStyle: {
-    alignSelf: 'center',
-    color: "black",
-    fontSize: 16,
-},
 
   bottomTextView:  {
     flex: 0.5,
